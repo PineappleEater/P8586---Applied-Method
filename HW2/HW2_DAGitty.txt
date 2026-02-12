@@ -1,0 +1,43 @@
+dag {
+bb="-1,-1,9,6"
+
+IVH [exposure,pos="4,3"]
+DEAD [outcome,pos="8,3"]
+GEST_AGE [pos="2,4"]
+BWT [pos="3,5"]
+ACS [pos="1,5"]
+CHORIO [pos="0,4"]
+DELIVERY [pos="2,2"]
+APGAR5 [pos="3,2"]
+SEX [pos="2,1"]
+PNEUMO [pos="6,2"]
+
+IVH -> DEAD
+IVH -> PNEUMO
+PNEUMO -> DEAD
+
+GEST_AGE -> IVH
+GEST_AGE -> DEAD
+GEST_AGE -> BWT
+GEST_AGE -> APGAR5
+GEST_AGE -> PNEUMO
+
+BWT -> IVH
+BWT -> DEAD
+
+ACS -> IVH
+ACS -> DEAD
+
+CHORIO -> GEST_AGE
+CHORIO -> IVH
+CHORIO -> DEAD
+
+DELIVERY -> IVH
+DELIVERY -> DEAD
+
+APGAR5 -> IVH
+APGAR5 -> DEAD
+
+SEX -> IVH
+SEX -> DEAD
+}

@@ -1,0 +1,5 @@
+\contentsline {section}{\numberline {1}Literature Review}{2}{section.1}%
+\contentsline {section}{\numberline {2}Directed Acyclic Graph (DAG)}{3}{section.2}%
+\contentsline {section}{\numberline {3}Comparison with HW1 Model}{4}{section.3}%
+\contentsline {section}{\numberline {4}E-Values Calculation}{5}{section.4}%
+\contentsline {section}{\numberline {5}References}{6}{section.5}%

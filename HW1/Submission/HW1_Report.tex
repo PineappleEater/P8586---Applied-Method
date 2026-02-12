@@ -1,0 +1,588 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  pdftitle={Homework 1: Multivariable Regression Analysis Report},
+  pdfauthor={Xuange Liang},
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage{longtable,booktabs,array}
+\usepackage{calc} % for calculating minipage widths
+% Correct order of tables after \paragraph or \subparagraph
+\usepackage{etoolbox}
+\makeatletter
+\patchcmd\longtable{\par}{\if@noskipsec\mbox{}\fi\par}{}{}
+\makeatother
+% Allow footnotes in longtable head/foot
+\IfFileExists{footnotehyper.sty}{\usepackage{footnotehyper}}{\usepackage{footnote}}
+\makesavenoteenv{longtable}
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{5}
+% Shared LaTeX style for homework submissions
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{caption}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage{enumitem}
+\usepackage[most]{tcolorbox}
+
+\definecolor{TitleBlue}{HTML}{0B3C5D}
+\definecolor{SoftGray}{HTML}{F6F8FA}
+
+\setstretch{1.15}
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+
+\titleformat{\section}{\large\bfseries\color{TitleBlue}}{\thesection}{0.6em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{TitleBlue}}{\thesubsection}{0.6em}{}
+
+\captionsetup{
+  font=small,
+  labelfont=bf
+}
+
+\rowcolors{2}{SoftGray}{white}
+\setlist[itemize]{leftmargin=*, topsep=2pt, itemsep=1pt}
+\setlist[enumerate]{leftmargin=*, topsep=2pt, itemsep=1pt}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{P8586 Applied Methods}
+\fancyfoot[C]{\thepage}
+\setlength{\headheight}{14pt}
+
+\AtBeginDocument{
+  \hypersetup{
+    colorlinks=true,
+    linkcolor=TitleBlue,
+    urlcolor=TitleBlue,
+    citecolor=TitleBlue
+  }
+}
+
+% Keep title and TOC on same page, content starts on new page
+\AtBeginDocument{
+  \let\oldtableofcontents\tableofcontents
+  \renewcommand{\tableofcontents}{%
+    \oldtableofcontents
+    \clearpage
+  }
+}
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\title{Homework 1: Multivariable Regression Analysis}
+\author{Xuange Liang}
+\date{February 4, 2026}
+
+\begin{document}
+\maketitle
+
+{
+\setcounter{tocdepth}{3}
+\tableofcontents
+}
+\hypertarget{research-question}{%
+\section{Research Question}\label{research-question}}
+
+\textbf{Objective}: To evaluate the association between intraventricular
+hemorrhage (IVH) and neonatal mortality among very low birth weight
+infants, adjusting for potential confounders.
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Dataset}: \texttt{hw\_vlbw} (Very Low Birth Weight Infants,
+  N=514)
+\item
+  \textbf{Exposure}: IVH (Intraventricular Hemorrhage)
+\item
+  \textbf{Outcome}: Death during hospitalization
+\item
+  \textbf{Study Design}: Retrospective cohort study
+\end{itemize}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{methods}{%
+\section{Methods}\label{methods}}
+
+\hypertarget{data-source}{%
+\subsection{1. Data Source}\label{data-source}}
+
+\begin{itemize}
+\tightlist
+\item
+  \textbf{Sample size}: 514 very low birth weight infants
+\item
+  \textbf{No missing data} on key variables
+\item
+  \textbf{Mortality rate}: 19.3\% (99/514)
+\item
+  \textbf{IVH prevalence}: 16.3\% (84/514)
+\end{itemize}
+
+\hypertarget{variable-definitions}{%
+\subsection{2. Variable Definitions}\label{variable-definitions}}
+
+\textbf{Primary Variables:} - Exposure: IVH (0=No, 1=Yes) - Outcome:
+DEAD (0=Alive, 1=Dead)
+
+\textbf{Covariates Considered:} - Pneumothorax (pneumo): 0=No, 1=Yes -
+Delivery mode (delivery\_new): 1=C-Section, 2=Vaginal - Multiple
+gestation (twin): 0=No, 1=Yes - Birth location (inout\_new): 1=Born at
+Duke, 2=Transport - Birth weight (bwt): Continuous (grams) and
+categorical - bwt\_cat: 1=\textless1000g, 2=1000-1299g, 3=1300-1599g -
+Gestational age (gest): Continuous (weeks) and categorical - gest\_cat:
+1=\textless28 weeks, 2=28-31 weeks, 3=≥32 weeks
+
+\hypertarget{statistical-analysis}{%
+\subsection{3. Statistical Analysis}\label{statistical-analysis}}
+
+\textbf{Step 1: Descriptive Statistics} - Baseline characteristics
+stratified by IVH status - Chi-square tests for categorical variables -
+t-tests and Wilcoxon rank-sum tests for continuous variables
+
+\textbf{Step 2: Unadjusted Association} - Logistic regression for odds
+ratio - Poisson regression with log link for risk ratio - 2×2
+contingency tables
+
+\textbf{Step 3: Covariate Selection (Purposeful Selection Method)} -
+Univariate screening: p \textless{} 0.25 threshold for candidate
+variables (Hosmer, Lemeshow, \& Sturdivant) - Variables selected: IVH,
+pneumo, inout\_new, bwt\_cat, gest\_cat - Variables excluded:
+delivery\_new (p=0.40), twin (p=0.66)
+
+\textbf{Step 4: Multivariable Model Building} - Initial model with all
+candidate variables - Sequential removal of non-significant variables (p
+\textgreater{} 0.10, per purposeful selection workflow) - Retention
+criteria: removal changes IVH beta by \textless20\% (change-in-estimate
+criterion for confounding assessment) - Variables removed: twin
+(p=0.40), delivery\_new (p=0.62), inout\_new (p=0.93)
+
+\textbf{Step 5: Final Model} - Adjusted for: pneumothorax, birth weight
+category, gestational age category - Both logistic (OR) and Poisson (RR)
+regression models estimated
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{table-1-baseline-characteristics-by-ivh-status}{%
+\subsection{Table 1: Baseline Characteristics by IVH
+Status}\label{table-1-baseline-characteristics-by-ivh-status}}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Characteristic & No IVH (n=430) & IVH (n=84) & p-value \\
+\midrule
+\endhead
+\textbf{Demographics} & & & \\
+Birth weight (g), mean±SD & 1101.4±246.0 & 964.1±266.7 &
+\textless0.001 \\
+Gestational age (wks), mean±SD & 29.1±2.3 & 27.4±2.2 & \textless0.001 \\
+\textbf{Birth Weight Category, n (\%)} & & & 0.004 \\
+\textless1000g & 146 (34.0\%) & 43 (51.2\%) & \\
+1000-1299g & 170 (39.5\%) & 30 (35.7\%) & \\
+1300-1599g & 114 (26.5\%) & 11 (13.1\%) & \\
+\textbf{Gestational Age Category, n (\%)} & & & \textless0.001 \\
+\textless28 weeks & 114 (26.5\%) & 40 (47.6\%) & \\
+28-31 weeks & 255 (59.3\%) & 42 (50.0\%) & \\
+≥32 weeks & 61 (14.2\%) & 2 (2.4\%) & \\
+\textbf{Complications, n (\%)} & & & \\
+Pneumothorax & 73 (17.0\%) & 34 (40.5\%) & \textless0.001 \\
+Multiple gestation & 100 (23.3\%) & 7 (8.3\%) & 0.002 \\
+\textbf{Delivery \& Location, n (\%)} & & & \\
+C-Section delivery & 221 (51.4\%) & 27 (32.1\%) & 0.001 \\
+Born at Duke & 366 (85.1\%) & 54 (64.3\%) & \textless0.001 \\
+\textbf{Outcome} & & & \\
+Death & 58 (13.5\%) & 41 (48.8\%) & \textless0.001 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Key Findings:} - Infants with IVH had significantly lower birth
+weight (137g difference, p\textless0.001) - IVH was more common in
+extremely premature infants (\textless28 weeks: 47.6\% vs 26.5\%) - IVH
+co-occurred frequently with pneumothorax (40.5\% vs 17.0\%,
+p\textless0.001) - Mortality was 3.6 times higher in IVH group (48.8\%
+vs 13.5\%)
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{table-2-mortality-by-baseline-characteristics}{%
+\subsection{Table 2: Mortality by Baseline
+Characteristics}\label{table-2-mortality-by-baseline-characteristics}}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+Characteristic & Alive (n=415) & Dead (n=99) & Mortality Rate &
+p-value \\
+\midrule
+\endhead
+\textbf{Exposure} & & & & \\
+No IVH & 372 (89.6\%) & 58 (58.6\%) & 13.5\% & \textless0.001 \\
+IVH & 43 (10.4\%) & 41 (41.4\%) & 48.8\% & \\
+\textbf{Complications} & & & & \\
+No pneumothorax & 359 (86.5\%) & 48 (48.5\%) & 11.8\% &
+\textless0.001 \\
+Pneumothorax & 56 (13.5\%) & 51 (51.5\%) & 47.7\% & \\
+\textbf{Birth Weight} & & & & \textless0.001 \\
+\textless1000g & 122 (29.4\%) & 67 (67.7\%) & 35.5\% & \\
+1000-1299g & 173 (41.7\%) & 27 (27.3\%) & 13.5\% & \\
+1300-1599g & 120 (28.9\%) & 5 (5.1\%) & 4.0\% & \\
+\textbf{Gestational Age} & & & & \textless0.001 \\
+\textless28 weeks & 93 (22.4\%) & 61 (61.6\%) & 39.6\% & \\
+28-31 weeks & 261 (62.9\%) & 36 (36.4\%) & 12.1\% & \\
+≥32 weeks & 61 (14.7\%) & 2 (2.0\%) & 3.2\% & \\
+\bottomrule
+\end{longtable}
+
+\textbf{Interpretation of Table 2:} - Mortality was substantially higher
+among infants with IVH than without IVH (48.8\% vs 13.5\%), showing a
+strong crude exposure-outcome gradient. - Mortality was also much higher
+among infants with pneumothorax (47.7\% vs 11.8\%), indicating severe
+respiratory complications are strongly related to death. - A clear
+dose-response pattern was present for birth weight: mortality decreased
+from 35.5\% (\textless1000g) to 13.5\% (1000-1299g) to 4.0\%
+(1300-1599g). - A similar gradient was observed by gestational age:
+39.6\% (\textless28 weeks), 12.1\% (28-31 weeks), and 3.2\%
+(\textgreater=32 weeks), supporting prematurity as a major mortality
+driver. - Because IVH is associated with these strong mortality
+predictors (Table 1), confounding is plausible and multivariable
+adjustment is required.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{table-3-unadjusted-and-adjusted-association-between-ivh-and-mortality}{%
+\subsection{Table 3: Unadjusted and Adjusted Association Between IVH and
+Mortality}\label{table-3-unadjusted-and-adjusted-association-between-ivh-and-mortality}}
+
+\begin{longtable}[]{@{}lllll@{}}
+\toprule
+Model & Measure & Estimate & 95\% CI & p-value \\
+\midrule
+\endhead
+\textbf{Unadjusted} & & & & \\
+Logistic & Odds Ratio & 6.116 & 3.674 - 10.179 & \textless0.001 \\
+Poisson & Risk Ratio & 3.619 & 2.426 - 5.398 & \textless0.001 \\
+\textbf{Adjusted¹} & & & & \\
+Logistic & Odds Ratio & 4.149 & 2.291 - 7.516 & \textless0.001 \\
+Poisson & Risk Ratio & 2.059 & 1.351 - 3.137 & 0.001 \\
+\bottomrule
+\end{longtable}
+
+¹ Adjusted for pneumothorax, birth weight category, and gestational age
+category
+
+\textbf{Interpretation:} - After adjusting for key confounders, IVH
+\textbf{increased the odds of death by 4.1-fold} (95\% CI: 2.3-7.5) - We
+emphasize RR over OR for effect communication because death is not a
+rare outcome in this cohort (99/514 = 19.3\%); with common outcomes, OR
+can overstate the magnitude of association relative to RR. - Using the
+more appropriate risk ratio for this context, IVH \textbf{doubled the
+risk of death} (RR=2.1, 95\% CI: 1.4-3.1) - Adjustment attenuated the
+effect by 32\% (OR: 6.1→4.1), indicating substantial but incomplete
+confounding
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{table-4-final-multivariable-model-results}{%
+\subsection{Table 4: Final Multivariable Model
+Results}\label{table-4-final-multivariable-model-results}}
+
+\hypertarget{a.-logistic-regression-odds-ratios}{%
+\subsubsection{A. Logistic Regression (Odds
+Ratios)}\label{a.-logistic-regression-odds-ratios}}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Variable & Odds Ratio & 95\% CI & p-value \\
+\midrule
+\endhead
+\textbf{IVH (Yes vs No)} & \textbf{4.149} & 2.291 - 7.516 &
+\textless0.001 \\
+Pneumothorax (Yes vs No) & 6.185 & 3.486 - 10.975 & \textless0.001 \\
+\textbf{Birth Weight} & & & 0.0002 \\
+\textless1000g vs 1300-1599g & 8.902 & 2.858 - 27.729 & 0.0002 \\
+1000-1299g vs 1300-1599g & 3.216 & 1.113 - 9.293 & 0.031 \\
+\textbf{Gestational Age} & & & 0.151 \\
+\textless28 weeks vs ≥32 weeks & 3.691 & 0.749 - 18.177 & 0.108 \\
+28-31 weeks vs ≥32 weeks & 2.239 & 0.484 - 10.352 & 0.302 \\
+\bottomrule
+\end{longtable}
+
+\textbf{Model Performance:} - C-statistic: 0.853 (excellent
+discrimination) - AIC: 373.1 - -2 Log Likelihood: 359.1
+
+\hypertarget{b.-poisson-regression-risk-ratios}{%
+\subsubsection{B. Poisson Regression (Risk
+Ratios)}\label{b.-poisson-regression-risk-ratios}}
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Variable & Risk Ratio & 95\% CI & p-value \\
+\midrule
+\endhead
+\textbf{IVH (Yes vs No)} & \textbf{2.059} & 1.351 - 3.137 & 0.001 \\
+Pneumothorax (Yes vs No) & 2.821 & 1.850 - 4.300 & \textless0.001 \\
+\textbf{Birth Weight} & & & 0.004 \\
+\textless1000g vs 1300-1599g & 4.861 & 1.779 - 13.283 & 0.002 \\
+1000-1299g vs 1300-1599g & 2.692 & 1.025 - 7.069 & 0.044 \\
+\textbf{Gestational Age} & & & 0.244 \\
+\textless28 weeks vs ≥32 weeks & 3.143 & 0.710 - 13.923 & 0.132 \\
+28-31 weeks vs ≥32 weeks & 2.333 & 0.555 - 9.809 & 0.248 \\
+\bottomrule
+\end{longtable}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{sensitivity-analysis}{%
+\subsection{Sensitivity Analysis}\label{sensitivity-analysis}}
+
+A simpler model including only IVH, pneumothorax, and birth weight
+(without gestational age) was also tested:
+
+\begin{longtable}[]{@{}llll@{}}
+\toprule
+Parameter & IVH OR (Full Model) & IVH OR (Simple Model) & \% Change \\
+\midrule
+\endhead
+Beta coefficient & 1.4230 & 1.4750 & +3.7\% \\
+Odds Ratio & 4.149 & 4.371 & +5.3\% \\
+C-statistic & 0.853 & 0.842 & -1.3\% \\
+\bottomrule
+\end{longtable}
+
+\textbf{Conclusion}: The IVH effect estimate is robust across model
+specifications (\textless5\% change), supporting the validity of our
+findings. The full model with gestational age is retained as the primary
+analysis due to slightly better discrimination and theoretical
+considerations.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{discussion}{%
+\section{Discussion}\label{discussion}}
+
+\hypertarget{main-findings}{%
+\subsection{Main Findings}\label{main-findings}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\item
+  \textbf{Strong Independent Effect}: After controlling for prematurity
+  markers (birth weight, gestational age) and complications
+  (pneumothorax), IVH remained strongly associated with neonatal
+  mortality (adjusted OR=4.1, 95\% CI: 2.3-7.5).
+\item
+  \textbf{Substantial Confounding}: The crude association (OR=6.1) was
+  attenuated by 32\% after adjustment, indicating that the relationship
+  between IVH and mortality is partially explained by shared risk
+  factors related to prematurity and illness severity.
+\item
+  \textbf{Pneumothorax as Key Predictor}: Pneumothorax showed the
+  strongest association with mortality (OR=6.2), suggesting that
+  respiratory complications are critical determinants of outcomes in
+  this population.
+\item
+  \textbf{Dose-Response Relationship}: A clear gradient was observed for
+  birth weight, with the lowest weight category (\textless1000g) having
+  nearly 9-fold increased odds of death compared to the reference group
+  (1300-1599g).
+\item
+  \textbf{Gestational Age Effect}: While gestational age categories
+  showed non-significant associations in the multivariable model
+  (p=0.15), this likely reflects collinearity with birth weight rather
+  than lack of clinical importance.
+\end{enumerate}
+
+\hypertarget{why-rr-is-preferred-for-primary-interpretation}{%
+\subsection{Why RR is Preferred for Primary
+Interpretation}\label{why-rr-is-preferred-for-primary-interpretation}}
+
+\begin{itemize}
+\tightlist
+\item
+  The outcome (in-hospital death) occurred in 19.3\% of infants, which
+  is above the usual ``rare outcome'' range where OR approximates RR.
+\item
+  OR is mathematically valid for logistic models but tends to exaggerate
+  effect size when outcomes are common.
+\item
+  RR is more directly interpretable for cohort-style risk communication
+  (``times the risk'') and better aligns with clinical/public-health
+  interpretation.
+\item
+  Therefore, OR and RR are both reported for completeness, but RR is
+  used as the primary effect measure in interpretation.
+\end{itemize}
+
+\hypertarget{clinical-implications}{%
+\subsection{Clinical Implications}\label{clinical-implications}}
+
+\begin{itemize}
+\tightlist
+\item
+  IVH represents a \textbf{major independent risk factor} for mortality
+  in very low birth weight infants
+\item
+  Early detection and management of IVH should be prioritized
+\item
+  Co-occurrence of IVH and pneumothorax identifies an extremely
+  high-risk subgroup (likely \textgreater50\% mortality)
+\item
+  Prevention strategies targeting the most premature infants
+  (\textless28 weeks, \textless1000g) may have the greatest impact on
+  reducing mortality
+\end{itemize}
+
+\hypertarget{strengths}{%
+\subsection{Strengths}\label{strengths}}
+
+\begin{itemize}
+\tightlist
+\item
+  Complete data with no missing values
+\item
+  Appropriate statistical methods (purposeful selection, both OR and RR
+  reported)
+\item
+  Robust effect estimates across model specifications
+\item
+  Excellent model discrimination (c-statistic=0.853)
+\end{itemize}
+
+\hypertarget{limitations}{%
+\subsection{Limitations}\label{limitations}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  \textbf{Collinearity}: High correlation between birth weight and
+  gestational age limits ability to disentangle their independent
+  effects
+\item
+  \textbf{Residual Confounding}: Unmeasured factors (e.g., severity of
+  IVH, ventilator settings) may still confound the association
+\item
+  \textbf{Sample Size}: Wide confidence intervals for some estimates,
+  particularly gestational age categories
+\item
+  \textbf{Temporal Ambiguity}: Cannot determine if some complications
+  (e.g., pneumothorax) occurred before or after IVH
+\end{enumerate}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+Intraventricular hemorrhage is a strong, independent predictor of
+neonatal mortality among very low birth weight infants. After adjusting
+for pneumothorax, birth weight, and gestational age, infants with IVH
+had \textbf{4.1 times higher odds} (OR=4.1, 95\% CI: 2.3-7.5) and
+\textbf{2.1 times higher risk} (RR=2.1, 95\% CI: 1.4-3.1) of death
+compared to those without IVH. These findings underscore the critical
+importance of preventing and managing IVH in this vulnerable population.
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{references}{%
+\section{References}\label{references}}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Hosmer DW, Lemeshow S, Sturdivant RX. \emph{Applied Logistic
+  Regression}. 3rd ed.~New York: Wiley; 2013. (Purposeful selection
+  workflow, including p\textless0.25 screening and iterative model
+  reduction.)
+\item
+  Mickey RM, Greenland S. The impact of confounder selection criteria on
+  effect estimation. \emph{Am J Epidemiol}. 1989;129(1):125-137.
+  (Rationale for change-in-estimate confounder assessment.)
+\item
+  Zhang J, Yu KF. What's the relative risk? A method of correcting the
+  odds ratio in cohort studies of common outcomes. \emph{JAMA}.
+  1998;280(19):1690-1691. (Why OR diverges from RR when outcome is
+  common.)
+\item
+  Zou G. A modified Poisson regression approach to prospective studies
+  with binary data. \emph{Am J Epidemiol}. 2004;159(7):702-706. (RR
+  estimation using Poisson model with log link for binary outcomes.)
+\end{enumerate}
+
+\textbf{Software:} - SAS 9.4 (SAS Institute, Cary, NC) - Procedures:
+PROC LOGISTIC, PROC GENMOD, PROC FREQ, PROC MEANS
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\hypertarget{appendix-variable-coding}{%
+\section{Appendix: Variable Coding}\label{appendix-variable-coding}}
+
+\begin{verbatim}
+IVH:          0 = No IVH, 1 = IVH present
+DEAD:         0 = Alive at discharge, 1 = Dead
+pneumo:       0 = No pneumothorax, 1 = Pneumothorax
+bwt_cat:      1 = <1000g, 2 = 1000-1299g, 3 = 1300-1599g (reference)
+gest_cat:     1 = <28 weeks, 2 = 28-31 weeks, 3 = ≥32 weeks (reference)
+delivery_new: 1 = C-Section (reference), 2 = Vaginal
+twin:         0 = Singleton (reference), 1 = Multiple gestation
+inout_new:    1 = Born at Duke (reference), 2 = Transport
+\end{verbatim}
+
+\begin{center}\rule{0.5\linewidth}{0.5pt}\end{center}
+
+\textbf{Report Generated}: February 4, 2026\\
+\textbf{Analysis Code}: \url{HW1_Analysis.sas}
+
+\end{document}

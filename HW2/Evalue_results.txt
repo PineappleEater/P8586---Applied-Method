@@ -1,0 +1,19 @@
+HW2 DAGitty + E-value Results
+================================
+
+DAG: saved as HW2/DAG_HW2.png
+
+Minimal sufficient adjustment set(s) from DAGitty:
+{ ACS, APGAR5, BWT, CHORIO, DELIVERY, GEST_AGE, SEX }
+
+E-value inputs (from HW1 adjusted Poisson model):
+RR = 2.059; 95% CI = 1.351 to 3.137
+
+Manual E-value calculation:
+E-value for point estimate (RR=2.059): 3.536
+E-value for lower CI limit (RR=1.351): 2.040
+
+EValue package output:
+            point    lower upper
+RR       2.059000 1.351000 3.137
+E-values 3.535645 2.039623    NA
