@@ -8,7 +8,7 @@ Academic course repository for P8586 (Applied Methods in Health Services and Out
   - `HW{N}.md`: Assignment requirements and instructions
   - `HW{N}_Analysis.sas`: Main SAS analysis code
   - `HW{N}_Report.md`: Working draft of written report
-  - `HW{N}_Solution.md`: Final solution with complete answers
+  - `HW{N}_Report.md`: Final solution with complete answers
   - `*.sas7bdat`: SAS datasets
   - `LAB_*.sas`: Reference code examples from instructor
   - **`Submission/`**: Final submission package with standardized naming:
