@@ -1,0 +1,7057 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.4, see www.sas.com">
+<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.accessiblecaption
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.aftercaption
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  padding-top: 4pt;
+}
+.batch
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-collapse: separate;
+  border-color: #000000;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+  color: #000000;
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  padding: 7px;
+}
+.beforecaption
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.body
+{
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.bodydate
+{
+  color: #000000;
+  width: 100%;
+}
+.bycontentfolder
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.byline
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.bylinecontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  width: 100%;
+}
+.caption
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.contentfolder
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.contentitem
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.contentproclabel
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.contentprocname
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.contents
+{
+  background-color: #FFFFFF;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.contentsdate
+{
+  color: #000000;
+  width: 100%;
+}
+.contenttitle
+{
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.continued
+{
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: left;
+  width: 100%;
+}
+.data
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.dataemphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.dataemphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.dataempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datafixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.datastrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.datastrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.date
+{
+  color: #000000;
+  width: 100%;
+}
+.document
+{
+}
+a:link {
+color:#0066AA
+}
+a:visited {
+color:#004488
+}
+a:active {
+color:#004488
+}
+.errorcontent
+{
+  text-align: left;
+}
+.errorcontentfixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.extendedpage
+{
+  border: 1pt solid #000000;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+}
+.fatalcontent
+{
+  text-align: left;
+}
+.fatalcontentfixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.folderaction
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.footer
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footeremphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.footerempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.footerfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.footerstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.footerstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.frame
+{
+}
+.graph
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-collapse: separate;
+  border-color: #000000;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.header
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headeremphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.headerempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.headersandfooters
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.headerstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.headerstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.heading1
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading2
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading3
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading4
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading5
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.heading6
+{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.index
+{
+  color: #000000;
+}
+.indexaction
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.indexitem
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.indexprocname
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.indextitle
+{
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.layoutcontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.layoutregion
+{
+  border: 0px solid #000000;
+  border-spacing: 30px;
+}
+.linecontent
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.list
+{
+  list-style-type: disc;
+}
+.list10
+{
+  list-style-type: square;
+}
+.list2
+{
+  list-style-type: circle;
+}
+.list3
+{
+  list-style-type: square;
+}
+.list4
+{
+  list-style-type: square;
+}
+.list5
+{
+  list-style-type: square;
+}
+.list6
+{
+  list-style-type: square;
+}
+.list7
+{
+  list-style-type: square;
+}
+.list8
+{
+  list-style-type: square;
+}
+.list9
+{
+  list-style-type: square;
+}
+.listitem
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: disc;
+}
+.listitem10
+{
+  list-style-type: square;
+}
+.listitem2
+{
+  list-style-type: circle;
+}
+.listitem3
+{
+  list-style-type: square;
+}
+.listitem4
+{
+  list-style-type: square;
+}
+.listitem5
+{
+  list-style-type: square;
+}
+.listitem6
+{
+  list-style-type: square;
+}
+.listitem7
+{
+  list-style-type: square;
+}
+.listitem8
+{
+  list-style-type: square;
+}
+.listitem9
+{
+  list-style-type: square;
+}
+.notebanner
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.notecontent
+{
+  text-align: left;
+}
+.notecontentfixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.output
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-collapse: separate;
+  border-color: #000000;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.pageno
+{
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  text-align: right;
+  vertical-align: top;
+}
+.pages
+{
+  background-color: #FFFFFF;
+  list-style-type: decimal;
+  margin-left: 8px;
+  margin-right: 8px;
+}
+.pagesdate
+{
+  color: #000000;
+  width: 100%;
+}
+.pagesitem
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  list-style-type: none;
+}
+.pagesproclabel
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.pagesprocname
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  list-style-type: decimal;
+}
+.pagestitle
+{
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.paragraph
+{
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.parskip
+{
+  border-spacing: 0px;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.prepage
+{
+  text-align: left;
+}
+.proctitle
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.proctitlefixed
+{
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowfooter
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooteremphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.rowfooterempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowfooterfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowfooterstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.rowfooterstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.rowheader
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasis
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderemphasisfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.rowheaderempty
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: normal;
+}
+.rowheaderfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+}
+.rowheaderstrong
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.rowheaderstrongfixed
+{
+  background-color: #FFFFFF;
+  color: #000000;
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: bold;
+}
+.systemfooter
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter10
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter2
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter3
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter4
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter5
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter6
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter7
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter8
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemfooter9
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle10
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle2
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle3
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle4
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle5
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle6
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle7
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle8
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systemtitle9
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.systitleandfootercontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 0px;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+  width: 100%;
+}
+.table
+{
+  background-color: #FFFFFF;
+  border-bottom-width: 1px;
+  border-collapse: separate;
+  border-color: #000000;
+  border-left-width: 0px;
+  border-right-width: 0px;
+  border-spacing: 0px;
+  border-style: solid;
+  border-top-width: 1px;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+  border: 0;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+  border: 0;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+  border: 0;
+}
+.titleandnotecontainer
+{
+  border: 0px solid #000000;
+  border-spacing: 1px;
+  width: 100%;
+}
+.titlesandfooters
+{
+  color: #000000;
+  font-family: Arial, Helvetica, Helv;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: bold;
+}
+.warncontent
+{
+  text-align: left;
+}
+.warncontentfixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-style: normal;
+  font-weight: normal;
+  text-align: left;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+</head>
+<body class="body">
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">PS Step 1 Logistic Regression Model</td>
+</tr>
+</table><br>
+<div class="c proctitle">The LOGISTIC Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Model Information">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="l data">WORK.VLBW</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Variable</th>
+<td class="l data">IVH</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Response Levels</th>
+<td class="l data">2</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="l data">binary logit</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Optimization Technique</th>
+<td class="l data">Fisher&#39;s scoring</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX1"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Observations Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX2"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Response Profile">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Response Profile</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Ordered<br/>Value</th>
+<th class="l b header" scope="col">     IVH</th>
+<th class="r b header" scope="col">Total<br/>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">0</td>
+<td class="r data">430</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">1</td>
+<td class="r data">84</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Probability modeled is IVH=1.</td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX3"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" colspan="2" scope="colgroup">Design Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">twin</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">delivery_new</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">inout_new</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX4"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX5"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and<br/>Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">AIC</th>
+<td class="r data">459.773</td>
+<td class="r data">405.553</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">SC</th>
+<td class="r data">464.015</td>
+<td class="r data">443.733</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">-2 Log L</th>
+<td class="r data">457.773</td>
+<td class="r data">387.553</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX6"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Global Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">70.2201</td>
+<td class="r data">8</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Score</th>
+<td class="r data">66.4560</td>
+<td class="r data">8</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Wald</th>
+<td class="r data">52.8523</td>
+<td class="r data">8</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX7"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Type 3 Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Type 3 Analysis of Effects</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<td class="r data">1</td>
+<td class="r data">19.4597</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">twin</th>
+<td class="r data">1</td>
+<td class="r data">6.8537</td>
+<td class="r data">0.0088</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">delivery_new</th>
+<td class="r data">1</td>
+<td class="r data">7.2132</td>
+<td class="r data">0.0072</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">inout_new</th>
+<td class="r data">1</td>
+<td class="r data">10.6449</td>
+<td class="r data">0.0011</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<td class="r data">2</td>
+<td class="r data">2.0989</td>
+<td class="r data">0.3501</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<td class="r data">2</td>
+<td class="r data">4.5940</td>
+<td class="r data">0.1006</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX8"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Analysis of Maximum Likelihood Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-4.4905</td>
+<td class="r data">0.8131</td>
+<td class="r data">30.4962</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.3116</td>
+<td class="r data">0.2973</td>
+<td class="r data">19.4597</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">twin</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.1410</td>
+<td class="r data">0.4358</td>
+<td class="r data">6.8537</td>
+<td class="r data">0.0088</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">delivery_new</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">0.7784</td>
+<td class="r data">0.2898</td>
+<td class="r data">7.2132</td>
+<td class="r data">0.0072</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">inout_new</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">0.9445</td>
+<td class="r data">0.2895</td>
+<td class="r data">10.6449</td>
+<td class="r data">0.0011</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0.6698</td>
+<td class="r data">0.4650</td>
+<td class="r data">2.0742</td>
+<td class="r data">0.1498</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">0.4472</td>
+<td class="r data">0.4023</td>
+<td class="r data">1.2358</td>
+<td class="r data">0.2663</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.6278</td>
+<td class="r data">0.8163</td>
+<td class="r data">3.9769</td>
+<td class="r data">0.0461</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">1.6220</td>
+<td class="r data">0.7587</td>
+<td class="r data">4.5708</td>
+<td class="r data">0.0325</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX9"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Odds Ratios">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Odds Ratio Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Point Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/> Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">pneumo       1 vs 0</th>
+<td class="r data">3.712</td>
+<td class="r data">2.073</td>
+<td class="r data">6.648</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">twin         1 vs 0</th>
+<td class="r data">0.319</td>
+<td class="r data">0.136</td>
+<td class="r data">0.751</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">delivery_new 2 vs 1</th>
+<td class="r data">2.178</td>
+<td class="r data">1.234</td>
+<td class="r data">3.844</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">inout_new    2 vs 1</th>
+<td class="r data">2.571</td>
+<td class="r data">1.458</td>
+<td class="r data">4.535</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat      1 vs 3</th>
+<td class="r data">1.954</td>
+<td class="r data">0.785</td>
+<td class="r data">4.861</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat      2 vs 3</th>
+<td class="r data">1.564</td>
+<td class="r data">0.711</td>
+<td class="r data">3.440</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat     1 vs 3</th>
+<td class="r data">5.093</td>
+<td class="r data">1.028</td>
+<td class="r data">25.221</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat     2 vs 3</th>
+<td class="r data">5.063</td>
+<td class="r data">1.145</td>
+<td class="r data">22.400</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX10"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Association Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Association of Predicted Probabilities and<br/>Observed Responses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Percent Concordant</th>
+<td class="r data">75.6</td>
+<th class="l rowheader" scope="row">Somers&#39; D</th>
+<td class="r data">0.542</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Discordant</th>
+<td class="r data">21.4</td>
+<th class="l rowheader" scope="row">Gamma</th>
+<td class="r data">0.559</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Tied</th>
+<td class="r data">3.0</td>
+<th class="l rowheader" scope="row">Tau-a</th>
+<td class="r data">0.149</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pairs</th>
+<td class="r data">36120</td>
+<th class="l rowheader" scope="row">c</th>
+<td class="r data">0.771</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX11"></a>
+<div>
+<div  class="c">
+<img alt="ROC Curve for Model" src="/home/u64139022/P8586/HW5/ROCCurve.png" style=" height: 480px; width: 480px;" border="0" class="c">
+</div>
+</div>
+<br>
+<a name="IDX12"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Partition">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Partition for the Hosmer and Lemeshow Test</th>
+</tr>
+<tr>
+<th class="r b header" rowspan="2" scope="col">Group</th>
+<th class="r b header" rowspan="2" scope="col">Total</th>
+<th class="c b header" colspan="2" scope="colgroup">IVH = 1           </th>
+<th class="c b header" colspan="2" scope="colgroup">IVH = 0           </th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Observed</th>
+<th class="r b header" scope="col">Expected</th>
+<th class="r b header" scope="col">Observed</th>
+<th class="r b header" scope="col">Expected</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="r data">55</td>
+<td class="r data">1</td>
+<td class="r data">0.89</td>
+<td class="r data">54</td>
+<td class="r data">54.11</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="r data">51</td>
+<td class="r data">2</td>
+<td class="r data">1.62</td>
+<td class="r data">49</td>
+<td class="r data">49.38</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">3</th>
+<td class="r data">65</td>
+<td class="r data">3</td>
+<td class="r data">4.65</td>
+<td class="r data">62</td>
+<td class="r data">60.35</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">4</th>
+<td class="r data">61</td>
+<td class="r data">7</td>
+<td class="r data">5.93</td>
+<td class="r data">54</td>
+<td class="r data">55.07</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">5</th>
+<td class="r data">48</td>
+<td class="r data">4</td>
+<td class="r data">5.48</td>
+<td class="r data">44</td>
+<td class="r data">42.52</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">6</th>
+<td class="r data">52</td>
+<td class="r data">8</td>
+<td class="r data">8.46</td>
+<td class="r data">44</td>
+<td class="r data">43.54</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">7</th>
+<td class="r data">64</td>
+<td class="r data">14</td>
+<td class="r data">12.36</td>
+<td class="r data">50</td>
+<td class="r data">51.64</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">8</th>
+<td class="r data">54</td>
+<td class="r data">16</td>
+<td class="r data">15.13</td>
+<td class="r data">38</td>
+<td class="r data">38.87</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">9</th>
+<td class="r data">64</td>
+<td class="r data">29</td>
+<td class="r data">29.50</td>
+<td class="r data">35</td>
+<td class="r data">34.50</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX13"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Chi-Square Test">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Hosmer and Lemeshow Goodness-of-Fit<br/>Test</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">1.7836</td>
+<td class="r data">7</td>
+<td class="r data">0.9708</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX14"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">PS Range and Counts by Stratum</td>
+</tr>
+</table><br>
+<div class="c proctitle">The MEANS Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Means: Summary statistics">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Analysis Variable : propensity_score Estimated Probability</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">ps_stratum</th>
+<th class="r b header" scope="col">N Obs</th>
+<th class="r b header" scope="col">Minimum</th>
+<th class="r b header" scope="col">Maximum</th>
+<th class="r b header" scope="col">Mean</th>
+<th class="r b header" scope="col">N</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t data">1</th>
+<th class="r t data">103</th>
+<td class="r data">0.0035704</td>
+<td class="r data">0.0380124</td>
+<td class="r data">0.0230764</td>
+<td class="r data">103</td>
+</tr>
+<tr>
+<th class="r t data">2</th>
+<th class="r t data">108</th>
+<td class="r data">0.0399684</td>
+<td class="r data">0.0998695</td>
+<td class="r data">0.0796263</td>
+<td class="r data">108</td>
+</tr>
+<tr>
+<th class="r t data">3</th>
+<th class="r t data">111</th>
+<td class="r data">0.1003896</td>
+<td class="r data">0.1620713</td>
+<td class="r data">0.1296679</td>
+<td class="r data">111</td>
+</tr>
+<tr>
+<th class="r t data">4</th>
+<th class="r t data">92</th>
+<td class="r data">0.1628568</td>
+<td class="r data">0.2479328</td>
+<td class="r data">0.1994560</td>
+<td class="r data">92</td>
+</tr>
+<tr>
+<th class="r t data">5</th>
+<th class="r t data">100</th>
+<td class="r data">0.2490107</td>
+<td class="r data">0.6987866</td>
+<td class="r data">0.4028041</td>
+<td class="r data">100</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX15"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Exposure Distribution by PS Stratum</td>
+</tr>
+</table><br>
+<div class="c proctitle">The FREQ Procedure</div>
+<p>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="c t"><div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+</colgroup>
+<tbody>
+<tr>
+<th class="l t stacked_cell header" scope="col"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<th class="l t header top_stacked_value" scope="col">Frequency</th>
+</tr>
+<tr>
+<th class="l t header bottom_stacked_value" scope="col">Col Pct</th>
+</tr>
+</table></th>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</td>
+<td><div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="4" scope="colgroup">Table&nbsp;of&nbsp;ps_stratum&nbsp;by&nbsp;IVH</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">ps_stratum</th>
+<th class="c b header" colspan="3" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="r header" scope="col">No IVH</th>
+<th class="r header" scope="col">IVH</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t rowheader" scope="row">         1  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">100</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">23.26</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">3.57</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">103</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         2  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">98</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">22.79</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">10</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">11.90</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">108</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         3  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">101</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">23.49</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">10</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">11.90</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">111</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         4  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">72</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">16.74</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">20</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">23.81</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">92</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         5  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">13.72</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">41</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">48.81</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">100</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Total       </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">430</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">84</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">514</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX16"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Table 1: Baseline Characteristics Within PS Strata</td>
+</tr>
+</table><br>
+<div class="c byline">ps_stratum=1</div>
+<p/><div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Tabulate: Table 1: ps_stratum=1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">&nbsp;</th>
+<th class="c header" colspan="4" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="c header" colspan="2" scope="colgroup">No IVH</th>
+<th class="c header" colspan="2" scope="colgroup">IVH   </th>
+</tr>
+<tr>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">pneumothorax occurred</th>
+<td class="r b data" rowspan="2">     100</td>
+<td class="r b data" rowspan="2">      100.00</td>
+<td class="r b data" rowspan="2">       3</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">No </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">multiple gestation</th>
+<td class="r b data" rowspan="2">      38</td>
+<td class="r b data" rowspan="2">       38.00</td>
+<td class="r b data" rowspan="2">       1</td>
+<td class="r b data" rowspan="2">       33.33</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Singleton</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Multiple </th>
+<td class="r b data">      62</td>
+<td class="r b data">       62.00</td>
+<td class="r b data">       2</td>
+<td class="r b data">       66.67</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">delivery_new</th>
+<td class="r b data" rowspan="2">      73</td>
+<td class="r b data" rowspan="2">       73.00</td>
+<td class="r b data" rowspan="2">       2</td>
+<td class="r b data" rowspan="2">       66.67</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">C-Section</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Vaginal  </th>
+<td class="r b data">      27</td>
+<td class="r b data">       27.00</td>
+<td class="r b data">       1</td>
+<td class="r b data">       33.33</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">inout_new</th>
+<td class="r b data" rowspan="2">      95</td>
+<td class="r b data" rowspan="2">       95.00</td>
+<td class="r b data" rowspan="2">       3</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Born at Duke</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Transport   </th>
+<td class="r b data">       5</td>
+<td class="r b data">        5.00</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">bwt_cat</th>
+<td class="r b data" rowspan="2">       9</td>
+<td class="r b data" rowspan="2">        9.00</td>
+<td class="r b data" rowspan="2">.</td>
+<td class="r b data" rowspan="2">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;1000g    </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1000-1299g</th>
+<td class="r b data">      45</td>
+<td class="r b data">       45.00</td>
+<td class="r b data">       2</td>
+<td class="r b data">       66.67</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1300-1599g</th>
+<td class="r b data">      46</td>
+<td class="r b data">       46.00</td>
+<td class="r b data">       1</td>
+<td class="r b data">       33.33</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">gest_cat</th>
+<td class="r b data" rowspan="2">       3</td>
+<td class="r b data" rowspan="2">        3.00</td>
+<td class="r b data" rowspan="2">.</td>
+<td class="r b data" rowspan="2">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;28 weeks  </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">28-31 weeks</th>
+<td class="r b data">      48</td>
+<td class="r b data">       48.00</td>
+<td class="r b data">       2</td>
+<td class="r b data">       66.67</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&gt;=32 weeks </th>
+<td class="r b data">      49</td>
+<td class="r b data">       49.00</td>
+<td class="r b data">       1</td>
+<td class="r b data">       33.33</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX17"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Table 1: Baseline Characteristics Within PS Strata</td>
+</tr>
+</table><br>
+<div class="c byline">ps_stratum=2</div>
+<p/><div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Tabulate: Table 1: ps_stratum=2">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">&nbsp;</th>
+<th class="c header" colspan="4" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="c header" colspan="2" scope="colgroup">No IVH</th>
+<th class="c header" colspan="2" scope="colgroup">IVH   </th>
+</tr>
+<tr>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">pneumothorax occurred</th>
+<td class="r b data" rowspan="2">      86</td>
+<td class="r b data" rowspan="2">       87.76</td>
+<td class="r b data" rowspan="2">       8</td>
+<td class="r b data" rowspan="2">       80.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">No </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Yes</th>
+<td class="r b data">      12</td>
+<td class="r b data">       12.24</td>
+<td class="r b data">       2</td>
+<td class="r b data">       20.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">multiple gestation</th>
+<td class="r b data" rowspan="2">      79</td>
+<td class="r b data" rowspan="2">       80.61</td>
+<td class="r b data" rowspan="2">       8</td>
+<td class="r b data" rowspan="2">       80.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Singleton</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Multiple </th>
+<td class="r b data">      19</td>
+<td class="r b data">       19.39</td>
+<td class="r b data">       2</td>
+<td class="r b data">       20.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">delivery_new</th>
+<td class="r b data" rowspan="2">      83</td>
+<td class="r b data" rowspan="2">       84.69</td>
+<td class="r b data" rowspan="2">      10</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">C-Section</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Vaginal  </th>
+<td class="r b data">      15</td>
+<td class="r b data">       15.31</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">inout_new</th>
+<td class="r b data" rowspan="2">      90</td>
+<td class="r b data" rowspan="2">       91.84</td>
+<td class="r b data" rowspan="2">      10</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Born at Duke</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Transport   </th>
+<td class="r b data">       8</td>
+<td class="r b data">        8.16</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">bwt_cat</th>
+<td class="r b data" rowspan="2">      28</td>
+<td class="r b data" rowspan="2">       28.57</td>
+<td class="r b data" rowspan="2">       3</td>
+<td class="r b data" rowspan="2">       30.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;1000g    </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1000-1299g</th>
+<td class="r b data">      49</td>
+<td class="r b data">       50.00</td>
+<td class="r b data">       6</td>
+<td class="r b data">       60.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1300-1599g</th>
+<td class="r b data">      21</td>
+<td class="r b data">       21.43</td>
+<td class="r b data">       1</td>
+<td class="r b data">       10.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">gest_cat</th>
+<td class="r b data" rowspan="2">       9</td>
+<td class="r b data" rowspan="2">        9.18</td>
+<td class="r b data" rowspan="2">       2</td>
+<td class="r b data" rowspan="2">       20.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;28 weeks  </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">28-31 weeks</th>
+<td class="r b data">      79</td>
+<td class="r b data">       80.61</td>
+<td class="r b data">       8</td>
+<td class="r b data">       80.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&gt;=32 weeks </th>
+<td class="r b data">      10</td>
+<td class="r b data">       10.20</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX18"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Table 1: Baseline Characteristics Within PS Strata</td>
+</tr>
+</table><br>
+<div class="c byline">ps_stratum=3</div>
+<p/><div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Tabulate: Table 1: ps_stratum=3">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">&nbsp;</th>
+<th class="c header" colspan="4" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="c header" colspan="2" scope="colgroup">No IVH</th>
+<th class="c header" colspan="2" scope="colgroup">IVH   </th>
+</tr>
+<tr>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">pneumothorax occurred</th>
+<td class="r b data" rowspan="2">      92</td>
+<td class="r b data" rowspan="2">       91.09</td>
+<td class="r b data" rowspan="2">      10</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">No </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Yes</th>
+<td class="r b data">       9</td>
+<td class="r b data">        8.91</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">multiple gestation</th>
+<td class="r b data" rowspan="2">      91</td>
+<td class="r b data" rowspan="2">       90.10</td>
+<td class="r b data" rowspan="2">      10</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Singleton</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Multiple </th>
+<td class="r b data">      10</td>
+<td class="r b data">        9.90</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">delivery_new</th>
+<td class="r b data" rowspan="2">      28</td>
+<td class="r b data" rowspan="2">       27.72</td>
+<td class="r b data" rowspan="2">.</td>
+<td class="r b data" rowspan="2">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">C-Section</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Vaginal  </th>
+<td class="r b data">      73</td>
+<td class="r b data">       72.28</td>
+<td class="r b data">      10</td>
+<td class="r b data">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">inout_new</th>
+<td class="r b data" rowspan="2">      95</td>
+<td class="r b data" rowspan="2">       94.06</td>
+<td class="r b data" rowspan="2">      10</td>
+<td class="r b data" rowspan="2">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Born at Duke</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Transport   </th>
+<td class="r b data">       6</td>
+<td class="r b data">        5.94</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">bwt_cat</th>
+<td class="r b data" rowspan="2">      25</td>
+<td class="r b data" rowspan="2">       24.75</td>
+<td class="r b data" rowspan="2">.</td>
+<td class="r b data" rowspan="2">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;1000g    </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1000-1299g</th>
+<td class="r b data">      40</td>
+<td class="r b data">       39.60</td>
+<td class="r b data">       6</td>
+<td class="r b data">       60.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1300-1599g</th>
+<td class="r b data">      36</td>
+<td class="r b data">       35.64</td>
+<td class="r b data">       4</td>
+<td class="r b data">       40.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">gest_cat</th>
+<td class="r b data" rowspan="2">      24</td>
+<td class="r b data" rowspan="2">       23.76</td>
+<td class="r b data" rowspan="2">.</td>
+<td class="r b data" rowspan="2">.</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;28 weeks  </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">28-31 weeks</th>
+<td class="r b data">      75</td>
+<td class="r b data">       74.26</td>
+<td class="r b data">      10</td>
+<td class="r b data">      100.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&gt;=32 weeks </th>
+<td class="r b data">       2</td>
+<td class="r b data">        1.98</td>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX19"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Table 1: Baseline Characteristics Within PS Strata</td>
+</tr>
+</table><br>
+<div class="c byline">ps_stratum=4</div>
+<p/><div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Tabulate: Table 1: ps_stratum=4">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">&nbsp;</th>
+<th class="c header" colspan="4" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="c header" colspan="2" scope="colgroup">No IVH</th>
+<th class="c header" colspan="2" scope="colgroup">IVH   </th>
+</tr>
+<tr>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">pneumothorax occurred</th>
+<td class="r b data" rowspan="2">      59</td>
+<td class="r b data" rowspan="2">       81.94</td>
+<td class="r b data" rowspan="2">      14</td>
+<td class="r b data" rowspan="2">       70.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">No </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Yes</th>
+<td class="r b data">      13</td>
+<td class="r b data">       18.06</td>
+<td class="r b data">       6</td>
+<td class="r b data">       30.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">multiple gestation</th>
+<td class="r b data" rowspan="2">      66</td>
+<td class="r b data" rowspan="2">       91.67</td>
+<td class="r b data" rowspan="2">      18</td>
+<td class="r b data" rowspan="2">       90.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Singleton</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Multiple </th>
+<td class="r b data">       6</td>
+<td class="r b data">        8.33</td>
+<td class="r b data">       2</td>
+<td class="r b data">       10.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">delivery_new</th>
+<td class="r b data" rowspan="2">      15</td>
+<td class="r b data" rowspan="2">       20.83</td>
+<td class="r b data" rowspan="2">       6</td>
+<td class="r b data" rowspan="2">       30.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">C-Section</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Vaginal  </th>
+<td class="r b data">      57</td>
+<td class="r b data">       79.17</td>
+<td class="r b data">      14</td>
+<td class="r b data">       70.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">inout_new</th>
+<td class="r b data" rowspan="2">      61</td>
+<td class="r b data" rowspan="2">       84.72</td>
+<td class="r b data" rowspan="2">      16</td>
+<td class="r b data" rowspan="2">       80.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Born at Duke</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Transport   </th>
+<td class="r b data">      11</td>
+<td class="r b data">       15.28</td>
+<td class="r b data">       4</td>
+<td class="r b data">       20.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">bwt_cat</th>
+<td class="r b data" rowspan="2">      52</td>
+<td class="r b data" rowspan="2">       72.22</td>
+<td class="r b data" rowspan="2">      13</td>
+<td class="r b data" rowspan="2">       65.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;1000g    </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1000-1299g</th>
+<td class="r b data">      14</td>
+<td class="r b data">       19.44</td>
+<td class="r b data">       4</td>
+<td class="r b data">       20.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1300-1599g</th>
+<td class="r b data">       6</td>
+<td class="r b data">        8.33</td>
+<td class="r b data">       3</td>
+<td class="r b data">       15.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">gest_cat</th>
+<td class="r b data" rowspan="2">      39</td>
+<td class="r b data" rowspan="2">       54.17</td>
+<td class="r b data" rowspan="2">      13</td>
+<td class="r b data" rowspan="2">       65.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;28 weeks  </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">28-31 weeks</th>
+<td class="r b data">      33</td>
+<td class="r b data">       45.83</td>
+<td class="r b data">       6</td>
+<td class="r b data">       30.00</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&gt;=32 weeks </th>
+<td class="r b data">.</td>
+<td class="r b data">.</td>
+<td class="r b data">       1</td>
+<td class="r b data">        5.00</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX20"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Table 1: Baseline Characteristics Within PS Strata</td>
+</tr>
+</table><br>
+<div class="c byline">ps_stratum=5</div>
+<p/><div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Tabulate: Table 1: ps_stratum=5">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c m header" rowspan="3" scope="col">&nbsp;</th>
+<th class="c header" colspan="4" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="c header" colspan="2" scope="colgroup">No IVH</th>
+<th class="c header" colspan="2" scope="colgroup">IVH   </th>
+</tr>
+<tr>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+<th class="c header" scope="col">N</th>
+<th class="c header" scope="col">%</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t rowheader" scope="row">pneumothorax occurred</th>
+<td class="r b data" rowspan="2">      20</td>
+<td class="r b data" rowspan="2">       33.90</td>
+<td class="r b data" rowspan="2">      15</td>
+<td class="r b data" rowspan="2">       36.59</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">No </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Yes</th>
+<td class="r b data">      39</td>
+<td class="r b data">       66.10</td>
+<td class="r b data">      26</td>
+<td class="r b data">       63.41</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">multiple gestation</th>
+<td class="r b data" rowspan="2">      56</td>
+<td class="r b data" rowspan="2">       94.92</td>
+<td class="r b data" rowspan="2">      40</td>
+<td class="r b data" rowspan="2">       97.56</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Singleton</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Multiple </th>
+<td class="r b data">       3</td>
+<td class="r b data">        5.08</td>
+<td class="r b data">       1</td>
+<td class="r b data">        2.44</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">delivery_new</th>
+<td class="r b data" rowspan="2">      22</td>
+<td class="r b data" rowspan="2">       37.29</td>
+<td class="r b data" rowspan="2">       9</td>
+<td class="r b data" rowspan="2">       21.95</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">C-Section</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Vaginal  </th>
+<td class="r b data">      37</td>
+<td class="r b data">       62.71</td>
+<td class="r b data">      32</td>
+<td class="r b data">       78.05</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">inout_new</th>
+<td class="r b data" rowspan="2">      25</td>
+<td class="r b data" rowspan="2">       42.37</td>
+<td class="r b data" rowspan="2">      15</td>
+<td class="r b data" rowspan="2">       36.59</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Born at Duke</th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Transport   </th>
+<td class="r b data">      34</td>
+<td class="r b data">       57.63</td>
+<td class="r b data">      26</td>
+<td class="r b data">       63.41</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">bwt_cat</th>
+<td class="r b data" rowspan="2">      32</td>
+<td class="r b data" rowspan="2">       54.24</td>
+<td class="r b data" rowspan="2">      27</td>
+<td class="r b data" rowspan="2">       65.85</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;1000g    </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1000-1299g</th>
+<td class="r b data">      22</td>
+<td class="r b data">       37.29</td>
+<td class="r b data">      12</td>
+<td class="r b data">       29.27</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">1300-1599g</th>
+<td class="r b data">       5</td>
+<td class="r b data">        8.47</td>
+<td class="r b data">       2</td>
+<td class="r b data">        4.88</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">gest_cat</th>
+<td class="r b data" rowspan="2">      39</td>
+<td class="r b data" rowspan="2">       66.10</td>
+<td class="r b data" rowspan="2">      25</td>
+<td class="r b data" rowspan="2">       60.98</td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">&lt;28 weeks  </th>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">28-31 weeks</th>
+<td class="r b data">      20</td>
+<td class="r b data">       33.90</td>
+<td class="r b data">      16</td>
+<td class="r b data">       39.02</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX21"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Figure 1: Proportion of Patients at Each PS Stratum by Exposure Group</td>
+</tr>
+</table><br>
+<div class="c proctitle">The FREQ Procedure</div>
+<p>
+<div>
+<div align="center">
+<table  summary="Page Layout"><tr>
+<td class="c t"><div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+</colgroup>
+<tbody>
+<tr>
+<th class="l t stacked_cell header" scope="col"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<th class="l t header top_stacked_value" scope="col">Frequency</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Percent</th>
+</tr>
+<tr>
+<th class="l t header middle_stacked_value" scope="col">Row Pct</th>
+</tr>
+<tr>
+<th class="l t header bottom_stacked_value" scope="col">Col Pct</th>
+</tr>
+</table></th>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</td>
+<td><div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Freq: Cross-Tabular Freq Table">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c header" colspan="4" scope="colgroup">Table&nbsp;of&nbsp;ps_stratum&nbsp;by&nbsp;IVH</th>
+</tr>
+<tr>
+<th class="c b header" rowspan="2" scope="col">ps_stratum</th>
+<th class="c b header" colspan="3" scope="colgroup">IVH</th>
+</tr>
+<tr>
+<th class="r header" scope="col">No IVH</th>
+<th class="r header" scope="col">IVH</th>
+<th class="r header" scope="col">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r t rowheader" scope="row">         1  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">100</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">19.46</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">97.09</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">23.26</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">3</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">0.58</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">2.91</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">3.57</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">103</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">20.04</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         2  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">98</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">19.07</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">90.74</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">22.79</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">10</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">1.95</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">9.26</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">11.90</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">108</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">21.01</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         3  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">101</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">19.65</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">90.99</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">23.49</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">10</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">1.95</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">9.01</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">11.90</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">111</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">21.60</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         4  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">72</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">14.01</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">78.26</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">16.74</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">20</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">3.89</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">21.74</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">23.81</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">92</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">17.90</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="r t rowheader" scope="row">         5  </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">59</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">11.48</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">59.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">13.72</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">41</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">7.98</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">41.00</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">48.81</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">100</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">19.46</td>
+</tr>
+<tr>
+<td class="r t data middle_stacked_value">&nbsp;</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">&nbsp;</td>
+</tr>
+</table></td>
+</tr>
+<tr>
+<th class="l t rowheader" scope="row">Total       </th>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">430</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">83.66</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">84</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">16.34</td>
+</tr>
+</table></td>
+<td class="r t stacked_cell data"><table width="100%" border="0" cellpadding="7" cellspacing="0">
+<tr>
+<td class="r t data top_stacked_value">514</td>
+</tr>
+<tr>
+<td class="r t data bottom_stacked_value">100.00</td>
+</tr>
+</table></td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</tr>
+</table>
+</div>
+</div>
+<br>
+<a name="IDX22"></a>
+<div>
+<div  class="c">
+<img alt="Bar Chart of Percents for ps_stratum by IVH" src="/home/u64139022/P8586/HW5/FreqPlot.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX23"></a>
+<div>
+<div  class="c">
+<img alt="The SGPanel Procedure" src="/home/u64139022/P8586/HW5/SGPanel.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+<a name="IDX24"></a>
+<div>
+<div  class="c">
+<img alt="The SGPanel Procedure" src="/home/u64139022/P8586/HW5/SGPanel1.png" style=" height: 480px; width: 640px;" border="0" class="c">
+</div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX25"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">PS Stratification OR: Conditional Logistic Regression by PS Stratum</td>
+</tr>
+</table><br>
+<div class="c proctitle">The LOGISTIC Procedure</div>
+<div class="c proctitle">&nbsp;</div>
+<div class="c proctitle">Conditional Analysis</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="l data">WORK.PS_STRATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Variable</th>
+<td class="l data">dead</td>
+<td class="l data">dead</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Response Levels</th>
+<td class="l data">2</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Strata</th>
+<td class="l data">5</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="l data">binary logit</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Optimization Technique</th>
+<td class="l data">Newton-Raphson ridge</td>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX26"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Observations Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Informative</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX27"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Response Profile">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Response Profile</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Ordered<br/>Value</th>
+<th class="l b header" scope="col">    dead</th>
+<th class="r b header" scope="col">Total<br/>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">0</td>
+<td class="r data">415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">1</td>
+<td class="r data">99</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Probability modeled is dead=1.</td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX28"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level<br/>Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" scope="col">Design<br/>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX29"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Strata Summary">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="5" scope="colgroup">Strata Summary</th>
+</tr>
+<tr>
+<th class="r b header" rowspan="2" scope="col">Response<br/>Pattern</th>
+<th class="c b header" colspan="2" scope="colgroup">dead</th>
+<th class="r b header" rowspan="2" scope="col">Number of<br/>Strata</th>
+<th class="r b header" rowspan="2" scope="col">Frequency</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">0</th>
+<th class="r b header" scope="col">1</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="r data">1</td>
+<td class="r data">64</td>
+<td class="r data">28</td>
+<td class="r data">1</td>
+<td class="r data">92</td>
+</tr>
+<tr>
+<td class="r data">2</td>
+<td class="r data">57</td>
+<td class="r data">43</td>
+<td class="r data">1</td>
+<td class="r data">100</td>
+</tr>
+<tr>
+<td class="r data">3</td>
+<td class="r data">99</td>
+<td class="r data">4</td>
+<td class="r data">1</td>
+<td class="r data">103</td>
+</tr>
+<tr>
+<td class="r data">4</td>
+<td class="r data">98</td>
+<td class="r data">10</td>
+<td class="r data">1</td>
+<td class="r data">108</td>
+</tr>
+<tr>
+<td class="r data">5</td>
+<td class="r data">97</td>
+<td class="r data">14</td>
+<td class="r data">1</td>
+<td class="r data">111</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Newton-Raphson Ridge Optimization</td></tr></table>
+</div><p>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Without Parameter Scaling</td></tr></table>
+</div><p>
+<a name="IDX30"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX31"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Without Covariates</th>
+<th class="r b header" scope="col">With Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">AIC</th>
+<td class="r data">412.828</td>
+<td class="r data">396.041</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">SC</th>
+<td class="r data">412.828</td>
+<td class="r data">400.284</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">-2 Log L</th>
+<td class="r data">412.828</td>
+<td class="r data">394.041</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX32"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Global Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">18.7868</td>
+<td class="r data">1</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Score</th>
+<td class="r data">19.9797</td>
+<td class="r data">1</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Wald</th>
+<td class="r data">19.2189</td>
+<td class="r data">1</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX33"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Type 3 Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Type 3 Analysis of Effects</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<td class="r data">1</td>
+<td class="r data">19.2189</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX34"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Analysis of Conditional Maximum Likelihood Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.2286</td>
+<td class="r data">0.2803</td>
+<td class="r data">19.2189</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX35"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Odds Ratios">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Odds Ratio Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Point Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/> Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH 1 vs 0</th>
+<td class="r data">3.417</td>
+<td class="r data">1.973</td>
+<td class="r data">5.918</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX36"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">PS Stratification RR: Poisson Regression Adjusted for PS Stratum</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GENMOD Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="r data">WORK.PS_STRATA</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Distribution</th>
+<td class="r data">Poisson</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Link Function</th>
+<td class="r data">Log</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Dependent Variable</th>
+<td class="r data">dead</td>
+<td class="l data">dead</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX37"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX38"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" colspan="4" scope="colgroup">Design Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">ps_stratum</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">4</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">5</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX39"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Parameter Information">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Parameter Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">Effect</th>
+<th class="l b header" scope="col">IVH</th>
+<th class="l b header" scope="col">ps_stratum</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Prm1</th>
+<td class="l data">Intercept</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm2</th>
+<td class="l data">IVH</td>
+<td class="l data">1</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm3</th>
+<td class="l data">ps_stratum</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm4</th>
+<td class="l data">ps_stratum</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">2</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm5</th>
+<td class="l data">ps_stratum</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">3</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm6</th>
+<td class="l data">ps_stratum</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">4</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX40"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Criteria For Assessing Goodness Of Fit">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Criteria For Assessing Goodness Of Fit</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Value/DF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Deviance</th>
+<td class="r data">508</td>
+<td class="r data">258.7417</td>
+<td class="r data">0.5093</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Deviance</th>
+<td class="r data">508</td>
+<td class="r data">258.7417</td>
+<td class="r data">0.5093</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pearson Chi-Square</th>
+<td class="r data">508</td>
+<td class="r data">403.8270</td>
+<td class="r data">0.7949</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Pearson X2</th>
+<td class="r data">508</td>
+<td class="r data">403.8270</td>
+<td class="r data">0.7949</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-228.3708</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Full Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-228.3708</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">468.7417</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AICC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">468.9073</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">BIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">494.1950</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX41"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="l data">Algorithm converged.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX42"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Analysis Of Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Analysis Of Maximum Likelihood Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="c headerempty" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="c b header" colspan="2" scope="colgroup">Wald 95% Confidence Limits</th>
+<th class="r b header" scope="col">Wald Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.2382</td>
+<td class="r data">0.2021</td>
+<td class="r data" nowrap>-1.6342</td>
+<td class="r data" nowrap>-0.8422</td>
+<td class="r data">37.55</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">0.7787</td>
+<td class="r data">0.2201</td>
+<td class="r data">0.3473</td>
+<td class="r data">1.2101</td>
+<td class="r data">12.51</td>
+<td class="r data">0.0004</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">ps_stratum</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-2.0440</td>
+<td class="r data">0.5361</td>
+<td class="r data" nowrap>-3.0948</td>
+<td class="r data" nowrap>-0.9932</td>
+<td class="r data">14.54</td>
+<td class="r data">0.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">ps_stratum</th>
+<th class="l data">2</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.2449</td>
+<td class="r data">0.3631</td>
+<td class="r data" nowrap>-1.9565</td>
+<td class="r data" nowrap>-0.5333</td>
+<td class="r data">11.76</td>
+<td class="r data">0.0006</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">ps_stratum</th>
+<th class="l data">3</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.9332</td>
+<td class="r data">0.3216</td>
+<td class="r data" nowrap>-1.5635</td>
+<td class="r data" nowrap>-0.3029</td>
+<td class="r data">8.42</td>
+<td class="r data">0.0037</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">ps_stratum</th>
+<th class="l data">4</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-0.1795</td>
+<td class="r data">0.2478</td>
+<td class="r data" nowrap>-0.6653</td>
+<td class="r data">0.3063</td>
+<td class="r data">0.52</td>
+<td class="r data">0.4689</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scale</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">0</td>
+<td class="r data">1.0000</td>
+<td class="r data">0.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="left"><table class="notecontent"><tr><td class="l notebanner">
+<!--BEGINNOTE-->Note:</td>
+<td class="l notecontent"><!--BEGINNOTE-->The scale parameter was held fixed.<!--ENDNOTE--></td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX43"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: ESTIMATE Statement Results">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="11" scope="colgroup">Contrast Estimate Results</th>
+</tr>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Label</th>
+<th class="r b header" rowspan="2" scope="col">Mean Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">Mean</th>
+<th class="r b header" rowspan="2" scope="col">L&#39;Beta Estimate</th>
+<th class="r b header" rowspan="2" scope="col">Standard<br/>Error</th>
+<th class="r b header" rowspan="2" scope="col">Alpha</th>
+<th class="c b header" colspan="2" scope="colgroup">L&#39;Beta</th>
+<th class="r b header" rowspan="2" scope="col">Chi-Square</th>
+<th class="r b header" rowspan="2" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH: Yes vs No</th>
+<td class="r data">2.1786</td>
+<td class="r data">1.4152</td>
+<td class="r data">3.3539</td>
+<td class="r data">0.7787</td>
+<td class="r data">0.2201</td>
+<td class="r data">0.05</td>
+<td class="r data">0.3473</td>
+<td class="r data">1.2101</td>
+<td class="r data">12.51</td>
+<td class="r data">0.0004</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Exp(IVH: Yes vs No)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2.1786</td>
+<td class="r data">0.4796</td>
+<td class="r data">0.05</td>
+<td class="r data">1.4152</td>
+<td class="r data">3.3539</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX44"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">PS Regression OR: Logistic Model with PS and PS Squared</td>
+</tr>
+</table><br>
+<div class="c proctitle">The LOGISTIC Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="l data">WORK.PS_NO_INTERACTION</td>
+<td class="l data">Predicted Values and Diagnostic Statistics</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Variable</th>
+<td class="l data">dead</td>
+<td class="l data">dead</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Response Levels</th>
+<td class="l data">2</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="l data">binary logit</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Optimization Technique</th>
+<td class="l data">Fisher&#39;s scoring</td>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX45"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Observations Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX46"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Response Profile">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Response Profile</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Ordered<br/>Value</th>
+<th class="l b header" scope="col">    dead</th>
+<th class="r b header" scope="col">Total<br/>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">0</td>
+<td class="r data">415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">1</td>
+<td class="r data">99</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Probability modeled is dead=1.</td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX47"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level<br/>Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" scope="col">Design<br/>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX48"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX49"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and<br/>Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">AIC</th>
+<td class="r data">505.701</td>
+<td class="r data">428.617</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">SC</th>
+<td class="r data">509.943</td>
+<td class="r data">445.586</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">-2 Log L</th>
+<td class="r data">503.701</td>
+<td class="r data">420.617</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX50"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Global Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">83.0839</td>
+<td class="r data">3</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Score</th>
+<td class="r data">91.5864</td>
+<td class="r data">3</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Wald</th>
+<td class="r data">70.9221</td>
+<td class="r data">3</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX51"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Type 3 Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Type 3 Analysis of Effects</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<td class="r data">1</td>
+<td class="r data">18.3364</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">propensity_score</th>
+<td class="r data">1</td>
+<td class="r data">12.7630</td>
+<td class="r data">0.0004</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">propensit*propensity</th>
+<td class="r data">1</td>
+<td class="r data">3.4628</td>
+<td class="r data">0.0628</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX52"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Analysis of Maximum Likelihood Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-3.0449</td>
+<td class="r data">0.3248</td>
+<td class="r data">87.8922</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.2187</td>
+<td class="r data">0.2846</td>
+<td class="r data">18.3364</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">propensity_score</th>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data">9.0347</td>
+<td class="r data">2.5289</td>
+<td class="r data">12.7630</td>
+<td class="r data">0.0004</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">propensit*propensity</th>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-7.3296</td>
+<td class="r data">3.9388</td>
+<td class="r data">3.4628</td>
+<td class="r data">0.0628</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX53"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Odds Ratios">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Odds Ratio Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Point Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/> Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH 1 vs 0</th>
+<td class="r data">3.383</td>
+<td class="r data">1.937</td>
+<td class="r data">5.909</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX54"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Association Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Association of Predicted Probabilities and<br/>Observed Responses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Percent Concordant</th>
+<td class="r data">77.8</td>
+<th class="l rowheader" scope="row">Somers&#39; D</th>
+<td class="r data">0.570</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Discordant</th>
+<td class="r data">20.7</td>
+<th class="l rowheader" scope="row">Gamma</th>
+<td class="r data">0.579</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Tied</th>
+<td class="r data">1.5</td>
+<th class="l rowheader" scope="row">Tau-a</th>
+<td class="r data">0.178</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pairs</th>
+<td class="r data">41085</td>
+<th class="l rowheader" scope="row">c</th>
+<td class="r data">0.785</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX55"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">PS Regression RR: Poisson Model with PS and PS Squared</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GENMOD Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="r data">WORK.PS_NO_INTERACTION</td>
+<td class="l data">Predicted Values and Diagnostic Statistics</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Distribution</th>
+<td class="r data">Poisson</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Link Function</th>
+<td class="r data">Log</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Dependent Variable</th>
+<td class="r data">dead</td>
+<td class="l data">dead</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX56"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX57"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level<br/>Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" scope="col">Design<br/>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX58"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Parameter Information">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Parameter Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">Effect</th>
+<th class="l b header" scope="col">IVH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Prm1</th>
+<td class="l data">Intercept</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm2</th>
+<td class="l data">IVH</td>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm3</th>
+<td class="l data">propensity_score</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm4</th>
+<td class="l data">propensit*propensity</td>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX59"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Criteria For Assessing Goodness Of Fit">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Criteria For Assessing Goodness Of Fit</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Value/DF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Deviance</th>
+<td class="r data">510</td>
+<td class="r data">265.0120</td>
+<td class="r data">0.5196</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Deviance</th>
+<td class="r data">510</td>
+<td class="r data">265.0120</td>
+<td class="r data">0.5196</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pearson Chi-Square</th>
+<td class="r data">510</td>
+<td class="r data">385.2130</td>
+<td class="r data">0.7553</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Pearson X2</th>
+<td class="r data">510</td>
+<td class="r data">385.2130</td>
+<td class="r data">0.7553</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-231.5060</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Full Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-231.5060</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">471.0120</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AICC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">471.0906</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">BIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">487.9809</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX60"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="l data">Algorithm converged.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX61"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Analysis Of Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Analysis Of Maximum Likelihood Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="c headerempty" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="c b header" colspan="2" scope="colgroup">Wald 95% Confidence Limits</th>
+<th class="r b header" scope="col">Wald Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-2.9453</td>
+<td class="r data">0.2812</td>
+<td class="r data" nowrap>-3.4965</td>
+<td class="r data" nowrap>-2.3940</td>
+<td class="r data">109.67</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">0.7672</td>
+<td class="r data">0.2258</td>
+<td class="r data">0.3247</td>
+<td class="r data">1.2097</td>
+<td class="r data">11.55</td>
+<td class="r data">0.0007</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">propensity_score</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data">7.3821</td>
+<td class="r data">2.0122</td>
+<td class="r data">3.4383</td>
+<td class="r data">11.3259</td>
+<td class="r data">13.46</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">propensit*propensity</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-6.8691</td>
+<td class="r data">2.8945</td>
+<td class="r data" nowrap>-12.5423</td>
+<td class="r data" nowrap>-1.1960</td>
+<td class="r data">5.63</td>
+<td class="r data">0.0176</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scale</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">0</td>
+<td class="r data">1.0000</td>
+<td class="r data">0.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="left"><table class="notecontent"><tr><td class="l notebanner">
+<!--BEGINNOTE-->Note:</td>
+<td class="l notecontent"><!--BEGINNOTE-->The scale parameter was held fixed.<!--ENDNOTE--></td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX62"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: ESTIMATE Statement Results">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="11" scope="colgroup">Contrast Estimate Results</th>
+</tr>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Label</th>
+<th class="r b header" rowspan="2" scope="col">Mean Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">Mean</th>
+<th class="r b header" rowspan="2" scope="col">L&#39;Beta Estimate</th>
+<th class="r b header" rowspan="2" scope="col">Standard<br/>Error</th>
+<th class="r b header" rowspan="2" scope="col">Alpha</th>
+<th class="c b header" colspan="2" scope="colgroup">L&#39;Beta</th>
+<th class="r b header" rowspan="2" scope="col">Chi-Square</th>
+<th class="r b header" rowspan="2" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH: Yes vs No</th>
+<td class="r data">2.1538</td>
+<td class="r data">1.3837</td>
+<td class="r data">3.3525</td>
+<td class="r data">0.7672</td>
+<td class="r data">0.2258</td>
+<td class="r data">0.05</td>
+<td class="r data">0.3247</td>
+<td class="r data">1.2097</td>
+<td class="r data">11.55</td>
+<td class="r data">0.0007</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Exp(IVH: Yes vs No)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2.1538</td>
+<td class="r data">0.4862</td>
+<td class="r data">0.05</td>
+<td class="r data">1.3837</td>
+<td class="r data">3.3525</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX63"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Unadjusted OR</td>
+</tr>
+</table><br>
+<div class="c proctitle">The LOGISTIC Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="l data">WORK.VLBW</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Variable</th>
+<td class="l data">dead</td>
+<td class="l data">dead</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Response Levels</th>
+<td class="l data">2</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="l data">binary logit</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Optimization Technique</th>
+<td class="l data">Fisher&#39;s scoring</td>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX64"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Observations Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX65"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Response Profile">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Response Profile</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Ordered<br/>Value</th>
+<th class="l b header" scope="col">    dead</th>
+<th class="r b header" scope="col">Total<br/>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">0</td>
+<td class="r data">415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">1</td>
+<td class="r data">99</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Probability modeled is dead=1.</td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX66"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level<br/>Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" scope="col">Design<br/>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX67"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX68"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and<br/>Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">AIC</th>
+<td class="r data">505.701</td>
+<td class="r data">460.588</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">SC</th>
+<td class="r data">509.943</td>
+<td class="r data">469.072</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">-2 Log L</th>
+<td class="r data">503.701</td>
+<td class="r data">456.588</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX69"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Global Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">47.1126</td>
+<td class="r data">1</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Score</th>
+<td class="r data">56.3764</td>
+<td class="r data">1</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Wald</th>
+<td class="r data">48.5249</td>
+<td class="r data">1</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX70"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Type 3 Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Type 3 Analysis of Effects</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<td class="r data">1</td>
+<td class="r data">48.5249</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX71"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Analysis of Maximum Likelihood Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-1.8585</td>
+<td class="r data">0.1412</td>
+<td class="r data">173.3024</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.8108</td>
+<td class="r data">0.2600</td>
+<td class="r data">48.5249</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX72"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Odds Ratios">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Odds Ratio Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Point Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/> Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH 1 vs 0</th>
+<td class="r data">6.116</td>
+<td class="r data">3.674</td>
+<td class="r data">10.179</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX73"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Association Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Association of Predicted Probabilities and<br/>Observed Responses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Percent Concordant</th>
+<td class="r data">37.1</td>
+<th class="l rowheader" scope="row">Somers&#39; D</th>
+<td class="r data">0.311</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Discordant</th>
+<td class="r data">6.1</td>
+<th class="l rowheader" scope="row">Gamma</th>
+<td class="r data">0.719</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Tied</th>
+<td class="r data">56.8</td>
+<th class="l rowheader" scope="row">Tau-a</th>
+<td class="r data">0.097</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pairs</th>
+<td class="r data">41085</td>
+<th class="l rowheader" scope="row">c</th>
+<td class="r data">0.655</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX74"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Unadjusted RR</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GENMOD Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="r data">WORK.VLBW</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Distribution</th>
+<td class="r data">Poisson</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Link Function</th>
+<td class="r data">Log</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Dependent Variable</th>
+<td class="r data">dead</td>
+<td class="l data">dead</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX75"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX76"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Class Level<br/>Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" scope="col">Design<br/>Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX77"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Parameter Information">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Parameter Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">Effect</th>
+<th class="l b header" scope="col">IVH</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Prm1</th>
+<td class="l data">Intercept</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm2</th>
+<td class="l data">IVH</td>
+<td class="l data">1</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX78"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Criteria For Assessing Goodness Of Fit">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Criteria For Assessing Goodness Of Fit</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Value/DF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Deviance</th>
+<td class="r data">512</td>
+<td class="r data">291.2018</td>
+<td class="r data">0.5688</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Deviance</th>
+<td class="r data">512</td>
+<td class="r data">291.2018</td>
+<td class="r data">0.5688</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pearson Chi-Square</th>
+<td class="r data">512</td>
+<td class="r data">415.0000</td>
+<td class="r data">0.8105</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Pearson X2</th>
+<td class="r data">512</td>
+<td class="r data">415.0000</td>
+<td class="r data">0.8105</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-244.6009</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Full Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-244.6009</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">493.2018</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AICC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">493.2252</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">BIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">501.6862</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX79"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="l data">Algorithm converged.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX80"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Analysis Of Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Analysis Of Maximum Likelihood Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="c headerempty" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="c b header" colspan="2" scope="colgroup">Wald 95% Confidence Limits</th>
+<th class="r b header" scope="col">Wald Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-2.0033</td>
+<td class="r data">0.1313</td>
+<td class="r data" nowrap>-2.2607</td>
+<td class="r data" nowrap>-1.7460</td>
+<td class="r data">232.78</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">1.2861</td>
+<td class="r data">0.2040</td>
+<td class="r data">0.8862</td>
+<td class="r data">1.6860</td>
+<td class="r data">39.73</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scale</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">0</td>
+<td class="r data">1.0000</td>
+<td class="r data">0.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="left"><table class="notecontent"><tr><td class="l notebanner">
+<!--BEGINNOTE-->Note:</td>
+<td class="l notecontent"><!--BEGINNOTE-->The scale parameter was held fixed.<!--ENDNOTE--></td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX81"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: ESTIMATE Statement Results">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="11" scope="colgroup">Contrast Estimate Results</th>
+</tr>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Label</th>
+<th class="r b header" rowspan="2" scope="col">Mean Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">Mean</th>
+<th class="r b header" rowspan="2" scope="col">L&#39;Beta Estimate</th>
+<th class="r b header" rowspan="2" scope="col">Standard<br/>Error</th>
+<th class="r b header" rowspan="2" scope="col">Alpha</th>
+<th class="c b header" colspan="2" scope="colgroup">L&#39;Beta</th>
+<th class="r b header" rowspan="2" scope="col">Chi-Square</th>
+<th class="r b header" rowspan="2" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH: Yes vs No</th>
+<td class="r data">3.6186</td>
+<td class="r data">2.4259</td>
+<td class="r data">5.3979</td>
+<td class="r data">1.2861</td>
+<td class="r data">0.2040</td>
+<td class="r data">0.05</td>
+<td class="r data">0.8862</td>
+<td class="r data">1.6860</td>
+<td class="r data">39.73</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Exp(IVH: Yes vs No)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">3.6186</td>
+<td class="r data">0.7383</td>
+<td class="r data">0.05</td>
+<td class="r data">2.4259</td>
+<td class="r data">5.3979</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX82"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Adjusted OR from HW1 Final Model</td>
+</tr>
+</table><br>
+<div class="c proctitle">The LOGISTIC Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="l data">WORK.VLBW</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Response Variable</th>
+<td class="l data">dead</td>
+<td class="l data">dead</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Response Levels</th>
+<td class="l data">2</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Model</th>
+<td class="l data">binary logit</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Optimization Technique</th>
+<td class="l data">Fisher&#39;s scoring</td>
+<td class="l data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX83"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Observations Summary">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX84"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Response Profile">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Response Profile</th>
+</tr>
+<tr>
+<th class="r b header" scope="col">Ordered<br/>Value</th>
+<th class="l b header" scope="col">    dead</th>
+<th class="r b header" scope="col">Total<br/>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="r rowheader" scope="row">1</th>
+<td class="l data">0</td>
+<td class="r data">415</td>
+</tr>
+<tr>
+<th class="r rowheader" scope="row">2</th>
+<td class="l data">1</td>
+<td class="r data">99</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="center"><table class="proctitle"><tr><td class="c proctitle">Probability modeled is dead=1.</td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX85"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" colspan="2" scope="colgroup">Design Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX86"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" scope="col">Model Convergence Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="c data">Convergence criterion (GCONV=1E-8) satisfied.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX87"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Fit Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Fit Statistics</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">Intercept Only</th>
+<th class="r b header" scope="col">Intercept and<br/>Covariates</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">AIC</th>
+<td class="r data">505.701</td>
+<td class="r data">373.141</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">SC</th>
+<td class="r data">509.943</td>
+<td class="r data">402.837</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">-2 Log L</th>
+<td class="r data">503.701</td>
+<td class="r data">359.141</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX88"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Global Tests">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Testing Global Null Hypothesis: BETA=0</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Test</th>
+<th class="r b header" scope="col">Chi-Square</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Likelihood Ratio</th>
+<td class="r data">144.5596</td>
+<td class="r data">6</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Score</th>
+<td class="r data">145.1882</td>
+<td class="r data">6</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Wald</th>
+<td class="r data">90.1183</td>
+<td class="r data">6</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX89"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Type 3 Tests">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Type 3 Analysis of Effects</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<td class="r data">1</td>
+<td class="r data">22.0420</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<td class="r data">1</td>
+<td class="r data">38.7845</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<td class="r data">2</td>
+<td class="r data">16.7419</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<td class="r data">2</td>
+<td class="r data">3.7875</td>
+<td class="r data">0.1505</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX90"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="7" scope="colgroup">Analysis of Maximum Likelihood Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="r b header" scope="col">Wald<br/>Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-4.7802</td>
+<td class="r data">0.8639</td>
+<td class="r data">30.6147</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.4230</td>
+<td class="r data">0.3031</td>
+<td class="r data">22.0420</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.8222</td>
+<td class="r data">0.2926</td>
+<td class="r data">38.7845</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">2.1863</td>
+<td class="r data">0.5797</td>
+<td class="r data">14.2228</td>
+<td class="r data">0.0002</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">1.1681</td>
+<td class="r data">0.5414</td>
+<td class="r data">4.6553</td>
+<td class="r data">0.0310</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">1.3058</td>
+<td class="r data">0.8134</td>
+<td class="r data">2.5770</td>
+<td class="r data">0.1084</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">1</td>
+<td class="r data">0.8060</td>
+<td class="r data">0.7812</td>
+<td class="r data">1.0644</td>
+<td class="r data">0.3022</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX91"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Odds Ratios">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Odds Ratio Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Effect</th>
+<th class="r b header" scope="col">Point Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">95% Wald<br/> Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH      1 vs 0</th>
+<td class="r data">4.149</td>
+<td class="r data">2.291</td>
+<td class="r data">7.516</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo   1 vs 0</th>
+<td class="r data">6.185</td>
+<td class="r data">3.486</td>
+<td class="r data">10.975</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat  1 vs 3</th>
+<td class="r data">8.902</td>
+<td class="r data">2.858</td>
+<td class="r data">27.729</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat  2 vs 3</th>
+<td class="r data">3.216</td>
+<td class="r data">1.113</td>
+<td class="r data">9.293</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat 1 vs 3</th>
+<td class="r data">3.691</td>
+<td class="r data">0.749</td>
+<td class="r data">18.177</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat 2 vs 3</th>
+<td class="r data">2.239</td>
+<td class="r data">0.484</td>
+<td class="r data">10.352</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX92"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Logistic: Association Statistics">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Association of Predicted Probabilities and<br/>Observed Responses</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Percent Concordant</th>
+<td class="r data">82.4</td>
+<th class="l rowheader" scope="row">Somers&#39; D</th>
+<td class="r data">0.706</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Discordant</th>
+<td class="r data">11.8</td>
+<th class="l rowheader" scope="row">Gamma</th>
+<td class="r data">0.749</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Percent Tied</th>
+<td class="r data">5.7</td>
+<th class="l rowheader" scope="row">Tau-a</th>
+<td class="r data">0.220</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pairs</th>
+<td class="r data">41085</td>
+<th class="l rowheader" scope="row">c</th>
+<td class="r data">0.853</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+<div class="branch">
+<p style="page-break-after: always;"><br/></p><hr size="3"/>
+<a name="IDX93"></a>
+<table class="systitleandfootercontainer" width="100%" cellspacing="0" cellpadding="1" rules="none" frame="void" border="0" summary="Page Layout">
+<tr>
+<td class="c systemtitle">Adjusted RR from HW1 Final Model</td>
+</tr>
+</table><br>
+<div class="c proctitle">The GENMOD Procedure</div>
+<p>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Model Information">
+<colgroup>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="3" scope="colgroup">Model Information</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Data Set</th>
+<td class="r data">WORK.VLBW</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Distribution</th>
+<td class="r data">Poisson</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Link Function</th>
+<td class="r data">Log</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Dependent Variable</th>
+<td class="r data">dead</td>
+<td class="l data">dead</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX94"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Number of Observations">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Read</th>
+<td class="r data">514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Number of Observations Used</th>
+<td class="r data">514</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX95"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Class Level Information">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Class Level Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Class</th>
+<th class="l b header" scope="col">Value</th>
+<th class="c b header" colspan="2" scope="colgroup">Design Variables</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<th class="l rowheader" scope="row">0</th>
+<td class="r data">0</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l rowheader" scope="row">1</th>
+<td class="r data">1</td>
+<td class="r data">0</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">2</th>
+<td class="r data">0</td>
+<td class="r data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">&nbsp;</th>
+<th class="l rowheader" scope="row">3</th>
+<td class="r data">0</td>
+<td class="r data">0</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX96"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Parameter Information">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="6" scope="colgroup">Parameter Information</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="l b header" scope="col">Effect</th>
+<th class="l b header" scope="col">IVH</th>
+<th class="l b header" scope="col">pneumo</th>
+<th class="l b header" scope="col">bwt_cat</th>
+<th class="l b header" scope="col">gest_cat</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Prm1</th>
+<td class="l data">Intercept</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm2</th>
+<td class="l data">IVH</td>
+<td class="l data">1</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm3</th>
+<td class="l data">pneumo</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">1</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm4</th>
+<td class="l data">bwt_cat</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">1</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm5</th>
+<td class="l data">bwt_cat</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">2</td>
+<td class="l data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm6</th>
+<td class="l data">gest_cat</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">1</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Prm7</th>
+<td class="l data">gest_cat</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">&nbsp;</td>
+<td class="l data">2</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX97"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Criteria For Assessing Goodness Of Fit">
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="4" scope="colgroup">Criteria For Assessing Goodness Of Fit</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Criterion</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Value</th>
+<th class="r b header" scope="col">Value/DF</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Deviance</th>
+<td class="r data">507</td>
+<td class="r data">225.1338</td>
+<td class="r data">0.4441</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Deviance</th>
+<td class="r data">507</td>
+<td class="r data">225.1338</td>
+<td class="r data">0.4441</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Pearson Chi-Square</th>
+<td class="r data">507</td>
+<td class="r data">380.9410</td>
+<td class="r data">0.7514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scaled Pearson X2</th>
+<td class="r data">507</td>
+<td class="r data">380.9410</td>
+<td class="r data">0.7514</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-211.5669</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Full Log Likelihood</th>
+<td class="r data">&nbsp;</td>
+<td class="r data" nowrap>-211.5669</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">437.1338</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">AICC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">437.3551</td>
+<td class="r data">&nbsp;</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">BIC (smaller is better)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">466.8294</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX98"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Convergence Status">
+<colgroup>
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td class="l data">Algorithm converged.</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+<a name="IDX99"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: Analysis Of Parameter Estimates">
+<colgroup>
+<col>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="9" scope="colgroup">Analysis Of Maximum Likelihood Parameter Estimates</th>
+</tr>
+<tr>
+<th class="l b header" scope="col">Parameter</th>
+<th class="c headerempty" scope="col">&nbsp;</th>
+<th class="r b header" scope="col">DF</th>
+<th class="r b header" scope="col">Estimate</th>
+<th class="r b header" scope="col">Standard<br/>Error</th>
+<th class="c b header" colspan="2" scope="colgroup">Wald 95% Confidence Limits</th>
+<th class="r b header" scope="col">Wald Chi-Square</th>
+<th class="r b header" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">Intercept</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">1</td>
+<td class="r data" nowrap>-4.3243</td>
+<td class="r data">0.7958</td>
+<td class="r data" nowrap>-5.8840</td>
+<td class="r data" nowrap>-2.7645</td>
+<td class="r data">29.53</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">IVH</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">0.7222</td>
+<td class="r data">0.2149</td>
+<td class="r data">0.3010</td>
+<td class="r data">1.1433</td>
+<td class="r data">11.30</td>
+<td class="r data">0.0008</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">pneumo</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">1.0370</td>
+<td class="r data">0.2151</td>
+<td class="r data">0.6154</td>
+<td class="r data">1.4587</td>
+<td class="r data">23.24</td>
+<td class="r data">&lt;.0001</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">1.5813</td>
+<td class="r data">0.5128</td>
+<td class="r data">0.5762</td>
+<td class="r data">2.5864</td>
+<td class="r data">9.51</td>
+<td class="r data">0.0020</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">bwt_cat</th>
+<th class="l data">2</th>
+<td class="r data">1</td>
+<td class="r data">0.9901</td>
+<td class="r data">0.4926</td>
+<td class="r data">0.0246</td>
+<td class="r data">1.9556</td>
+<td class="r data">4.04</td>
+<td class="r data">0.0444</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l data">1</th>
+<td class="r data">1</td>
+<td class="r data">1.1453</td>
+<td class="r data">0.7593</td>
+<td class="r data" nowrap>-0.3429</td>
+<td class="r data">2.6336</td>
+<td class="r data">2.28</td>
+<td class="r data">0.1315</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">gest_cat</th>
+<th class="l data">2</th>
+<td class="r data">1</td>
+<td class="r data">0.8470</td>
+<td class="r data">0.7328</td>
+<td class="r data" nowrap>-0.5893</td>
+<td class="r data">2.2833</td>
+<td class="r data">1.34</td>
+<td class="r data">0.2478</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Scale</th>
+<th class="l data">&nbsp;</th>
+<td class="r data">0</td>
+<td class="r data">1.0000</td>
+<td class="r data">0.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">1.0000</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+<br>
+<p>
+<div align="left"><table class="notecontent"><tr><td class="l notebanner">
+<!--BEGINNOTE-->Note:</td>
+<td class="l notecontent"><!--BEGINNOTE-->The scale parameter was held fixed.<!--ENDNOTE--></td></tr></table>
+</div><p>
+</div>
+<br>
+<a name="IDX100"></a>
+<div>
+<div align="center">
+<!--BEGINTABLE--><table class="table" cellspacing="0" cellpadding="7" rules="groups" frame="hsides" border="1" bordercolor="#000000" summary="Procedure Genmod: ESTIMATE Statement Results">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="c b header" colspan="11" scope="colgroup">Contrast Estimate Results</th>
+</tr>
+<tr>
+<th class="l b header" rowspan="2" scope="col">Label</th>
+<th class="r b header" rowspan="2" scope="col">Mean Estimate</th>
+<th class="c b header" colspan="2" scope="colgroup">Mean</th>
+<th class="r b header" rowspan="2" scope="col">L&#39;Beta Estimate</th>
+<th class="r b header" rowspan="2" scope="col">Standard<br/>Error</th>
+<th class="r b header" rowspan="2" scope="col">Alpha</th>
+<th class="c b header" colspan="2" scope="colgroup">L&#39;Beta</th>
+<th class="r b header" rowspan="2" scope="col">Chi-Square</th>
+<th class="r b header" rowspan="2" scope="col">Pr&nbsp;&gt;&nbsp;ChiSq</th>
+</tr>
+<tr>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+<th class="c b header" colspan="2" scope="colgroup">Confidence Limits</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l rowheader" scope="row">IVH: Yes vs No</th>
+<td class="r data">2.0589</td>
+<td class="r data">1.3512</td>
+<td class="r data">3.1372</td>
+<td class="r data">0.7222</td>
+<td class="r data">0.2149</td>
+<td class="r data">0.05</td>
+<td class="r data">0.3010</td>
+<td class="r data">1.1433</td>
+<td class="r data">11.30</td>
+<td class="r data">0.0008</td>
+</tr>
+<tr>
+<th class="l rowheader" scope="row">Exp(IVH: Yes vs No)</th>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">2.0589</td>
+<td class="r data">0.4424</td>
+<td class="r data">0.05</td>
+<td class="r data">1.3512</td>
+<td class="r data">3.1372</td>
+<td class="r data">&nbsp;</td>
+<td class="r data">&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<!--ENDTABLE--></div>
+</div>
+<br>
+</div>
+</body>
+</html>
